@@ -1,0 +1,101 @@
+<html>
+ <head></head>
+ <body>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>抖鱼 短视频</title>
+  <style>
+*{padding:0px;margin:0px}
+body{background-color:black}
+.last{background-color:#00ceff;width:50px;margin-left:50px;border-radius:10px;margin-top:610px}
+.last p{font-size:39px;color:white}
+.next{background-color:#00ceff;width:50px;margin-left:130px;margin-top:-46px;border-radius:10px}
+.next p{font-size:39px;color:white}
+.home{background-color:#00ceff;width:50px;margin-left:250px;margin-top:-55px;border-radius:10px}
+.home p{font-size:39px;color:white}
+.back{background-color:#00ceff;width:80px;margin-left:310px;margin-top:-55px;border-radius:10px}
+.back p{font-size:38px;color:white}
+.new{background-color:#00ceff;width:50px;margin-left:190px;margin-top:-45px;border-radius:10px}
+.new p{font-size:38px;color:white}
+
+
+
+.last:hover{background-color:red;}
+.last p:hover{color:black}
+.next:hover{background-color:red;}
+.next p:hover{color:black}
+.home:hover{background-color:red;}
+.home p:hover{color:black}
+.back:hover{background-color:red;}
+.back p:hover{color:black}
+.new:hover{background-color:red;}
+.new p:hover{color:black}
+video{margin-top:-150px}
+
+</style>
+  <script src="js/wc-3.0.6.min.js"></script>
+  <script>
+//上一个作品
+function last(){
+    wc.alert("暂无相关作品");
+}
+//！！！
+//下一个作品
+function next(){
+ document.location.href = "2.html"
+}
+//！！！
+//智能小标签
+function home(){
+  var a =  wc.read("571.text");
+    if(a=="你好"){
+   var book = prompt()
+   wc.write("572.text",""+book);
+   wc.delFile("571.text");
+   wc.write("571.text","119");
+   wc.delFile("570.text");
+   wc.write("570.text","111");
+   wc.alert("设置成功！");
+    }
+    if(a=="119"){
+    var b = wc.read("572.text");
+    wc.alert(b);
+    }
+  }
+//退出
+function back(){
+  wc.phoneHome();
+  }
+//刷新
+function wow(){
+    wc.alert("刷新中......");
+setTimeout(function wowpage(){
+let math = Math.round(Math.random()*99)
+wc.alert("为你跳转到"+math+"界面");
+document.location.href = ""+math+".html"
+},3561);
+}
+</script> <!--网络错误-->
+  <center>
+   <div class="cuowu">
+    <h1>网络似乎出现了错误</h1><br>
+    <h3>请检查你的网络是否连接正常</h3><br>There appears to be a network error,Please check if your network is connected properly.
+   </div>
+  </center> <!--视频-->
+  <video src="https://txmov2.a.kwimgs.com/upic/2024/04/11/18/BMjAyNDA0MTExODM3MzlfMzA3MDQ3NzY0NV8xMjk1ODE0NTcxOTFfMl8z_b_B0821add67fadd4a27281143e1ee63619.mp4?tag=1-1717294989-unknown-0-ulahxayaxk-1cfff7826ced7c9d&amp;clientCacheKey=3xrh9twnvbzjexs_b.mp4&amp;di=78e733a0&amp;bp=10000&amp;tt=b&amp;ss=vp" width="100%" height="760px" controls="" style="position:absolute"></video> <!--上一个-->
+  <div class="last" onclick="last()">
+   <p>&lt;</p>
+  </div> <!--下一个-->
+  <div class="next" onclick="next()">
+   <p>&gt;</p>
+  </div> <!--刷新-->
+  <div class="new" onclick="wow()">
+   <p>∞</p>
+  </div> <!--智能小标签-->
+  <div class="home" onclick="home()">
+   <p>家</p>
+  </div> <!--一键退出-->
+  <div class="back" onclick="back()">
+   <p>退出</p>
+  </div>
+ </body>
+  </html>
