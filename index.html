@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    .body {
+      background-color:#f8f8f8;
+    }
+    /* 定义动画效果 */
+    @keyframes openingAnimation {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    
+    /* 设置动画元素样式 */
+    .animation {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: openingAnimation 3s ease-in-out;
+    }
+
+    /* 设置网页内容样式 */
+    
+
+    /* 设置背景样式 */
+    .background 
+  
+     
+      width: 100%;
+      height: 900vh;
+    }
+  </style>
+</head>
+<body>
+  <div class="background">
+    <div class="animation">
+    <img src="loading1.png" width="150px"/>
+   <center><h3>发现美好生活</h3></center>
+    </div>
+  </div>
+  <script>
+    // 动画播放完毕后打开网址
+    setTimeout(function() {
+      window.location.href = "index.html";
+    }, 5000);
+  </script>
+  <body style="background-color: #f8f8f8;">
+    <!-- 网页内容 -->
+</body>
+</html>
