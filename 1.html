@@ -46,35 +46,22 @@ function next(){
 //！！！
 //智能小标签
 function home(){
-  var a =  wc.read("571.text");
-    if(a=="你好"){
-   var book = prompt()
-   wc.write("572.text",""+book);
-   wc.delFile("571.text");
-   wc.write("571.text","119");
-   wc.delFile("570.text");
-   wc.write("570.text","111");
-   wc.alert("设置成功！");
-    }
-    if(a=="119"){
-    var b = wc.read("572.text");
-    wc.alert(b);
-    }
+   alert("暂时无法使用")
   }
 //退出
 function back(){
-  wc.phoneHome();
+  alert("暂时无法使用")
   }
 //刷新
 function wow(){
-    wc.alert("刷新中......");
+alert("刷新中......");
 setTimeout(function wowpage(){
-let math = Math.round(Math.random()*99)
-wc.alert("为你跳转到"+math+"界面");
+let math = Math.round(Math.random()*6)
 document.location.href = ""+math+".html"
 },3561);
 }
-</script> <!--网络错误-->
+</script> 
+  <!--网络错误-->
   <center>
    <div class="cuowu">
     <h1>网络似乎出现了错误</h1><br>
