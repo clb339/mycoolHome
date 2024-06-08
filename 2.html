@@ -1,0 +1,79 @@
+<html>
+ <head></head>
+ <body>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>抖鱼 短视频</title>
+  <style>
+*{padding:0px;margin:0px}
+body{background-color:black}
+.last{background-color:#00ceff;width:50px;margin-left:50px;border-radius:10px;margin-top:610px}
+.last p{font-size:39px;color:white}
+.next{background-color:#00ceff;width:50px;margin-left:130px;margin-top:-46px;border-radius:10px}
+.next p{font-size:39px;color:white}
+.home{background-color:#00ceff;width:50px;margin-left:250px;margin-top:-55px;border-radius:10px}
+.home p{font-size:39px;color:white}
+.back{background-color:#00ceff;width:80px;margin-left:310px;margin-top:-55px;border-radius:10px}
+.back p{font-size:38px;color:white}
+.new{background-color:#00ceff;width:50px;margin-left:190px;margin-top:-45px;border-radius:10px}
+.new p{font-size:38px;color:white}
+
+
+.last:hover{background-color:red;}
+.last p:hover{color:black}
+.next:hover{background-color:red;}
+.next p:hover{color:black}
+.home:hover{background-color:red;}
+.home p:hover{color:black}
+.back:hover{background-color:red;}
+.back p:hover{color:black}
+.new:hover{background-color:red;}
+.new p:hover{color:black}
+video{margin-top:-150px}
+
+</style>
+<script src="js/wc-3.0.6.min.js"></script>
+<script>
+//上一个作品
+function last(){
+    document.location.href = "1.html"
+}
+//！！！
+//下一个作品
+function next(){
+ document.location.href = "3.html"
+}
+//！！！
+//智能小标签
+function home(){
+  
+alert("暂时无法使用")
+  }
+//退出
+function back(){
+  alert("暂时无法使用")
+  }
+//刷新
+function wow(){
+    alert("刷新中......");
+setTimeout(function wowpage(){
+let math = Math.round(Math.random()*99)
+document.location.href = ""+math+".html"
+},3561);
+}
+</script>
+<!--网络错误-->
+<center><div class="cuowu"><h1>网络似乎出现了错误</h1><br><h3>请检查你的网络是否连接正常</h3><br>There appears to be a network error,Please check if your network is connected properly.</div></center>
+<!--视频-->
+  <video src="https://alimov2.a.kwimgs.com/upic/2024/05/23/16/BMjAyNDA1MjMxNjAzMTdfMzAzNDg4NTE3Nl8xMzMwOTA0Njg0NDFfMV8z_b_B3d73237da56fd86de0f47bf7ba863604.mp4?tag=1-1717296507-unknown-0-s7uax7xqyd-a1cee79b4e5c2f69&clientCacheKey=3xbw88m34bnuaam_b.mp4&di=78e733a0&bp=10000&tt=b&ss=vp" width="100%" height="760px" controls="" style="position:absolute"></video>
+<!--上一个-->
+  <div class="last" onclick="last()"><p><</p></div> 
+<!--下一个-->
+  <div class="next" onclick="next()"><p>></p></div>
+<!--刷新-->  
+  <div class="new" onclick="wow()"><p>∞</p></div>
+  <!--智能小标签-->  
+  <div class="home" onclick="home()"><p>家</p></div>
+<!--一键退出-->
+  <div class="back" onclick="back()"><p>退出</p></div>
+ </body>
+</html>
